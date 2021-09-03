@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge ">
+    <meta name="viewport " content="width=divice-width,initial-scale=a.0">
+    <title></title>
+</head>
+    <body>
+<script>
+    var a=10;
+    var b=20;
+    var m=30;
+    var n=40;
+    var result;
+
+    result= a>b || b>=m || m>n; // 하나만 true여도 true 리턴 false|| fasle ||false
+    document.write(result,"<br>");
+
+    result= a>b || b>=m || m<=n; // 하나만 true여도 true 리턴 false|| fasle ||true
+    document.write(result,"<br>");
+
+    result= a<=b && b>=m || m<=n; // 모두 true여야 true 리턴 true && true ||true
+    document.write(result,"<br>");
+
+    result= a<=b && b<=m && m<=n; // 모두 true 여야 true 리턴 true && true && true
+    document.write(result,"<br>");
+
+    result=!(a>b);              //false 를 계산
+    document.write(result,"<br>") //true
+
+</script>
+</body>
+</html>
