@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열객체</title>
+</head>
+<body>
+    <script>
+        var t = "Hello Thank you good luck to you";
+
+        //index = 16인 문자 반환
+        document.write("======charAt======", "<br>");
+        document.write(t.charAt(16), "<br>");
+
+        //오른쪽으로 "you"를 가장 처음 만나는 index 반환(12)
+        document.write("======indexOf======", "<br>");
+        document.write(t.indexOf("you"), "<br>");
+        //index 16부터 오른쪽으로 "you"를 가장 처음 만나는 index 반환(12)
+        document.write("======indexOf(16)======", "<br>");
+        document.write(t.indexOf("you", 16), "<br>");
+        //왼쪽으로 가장 처음 찾은 you의 index 반환
+        document.write("======lastIndexOf======", "<br>");
+        document.write(t.lastIndexOf("you"), "<br>");
+        //index 25부터 왼쪽으로 가장 처음 찾은 you의 index 반환
+        document.write("======lastIndexOf(25)======", "<br>");
+        document.write(t.lastIndexOf("you", 25), "<br>");
+        //처음으로 찾은 luck이라는 문자열 반환
+        document.write("======match======", "<br>");
+        document.write(t.match("luck"), "<br>");
+        //처음으로 찾은 you의 index 반환
+        //indexOf와의 차이점 : search는 검색 위치 지정 불가
+        document.write("======search======", "<br>");
+        document.write(t.search("you"), "<br>");
+        //index 21부터 4개의 문자열 반환
+        document.write("======substr======", "<br>");
+        document.write(t.substr(21, 4), "<br>");
+        //index 6~12사이의 문자열 반환
+        document.write("======substring======", "<br>");
+        document.write(t.substring(6, 12), "<br>");
+        //문자열에서 처음으로 찾은 you를 me로 치환하여 반환
+        document.write("======replace======", "<br>");
+        document.write(t.replace("you", "me"), "<br>");
+        //대문자를 소문자로 변환하여 반환
+        document.write("======toLowerCase======", "<br>");
+        document.write(t.toLowerCase(), "<br>");
+        //소문자를 대문자로 변환하여 반환
+        document.write("======toUpperCase======", "<br>");
+        document.write(t.toUpperCase(), "<br>");
+        //문자열 길이 반환
+        document.write("======length======", "<br>");
+        document.write(t.length, "<br>");
+        //공백문자 기준으로 문자열 분리하여 배열객체로 반환
+        document.write("======split======", "<br>");
+        var s = t.split(" ");
+        document.write(s[0], "<br>");
+        document.write(s[4], "<br>");
+        //해당하는 문자의 아스키 코드 값 반환
+        var str = "ABCD";
+        document.write("======charCodeAt======", "<br>");
+        document.write(str.charCodeAt(1), "<br>");
+        //아스키 코드 값에 해당하는 문자 반환
+        document.write("======fromCharCode======", "<br>");
+        document.write(String.fromCharCode(97), "<br>");
+
+        var phoneNum = "01012345678";
+        document.write("======phonNum======", "<br>");
+        //phoneNum.substring(0, phoneNum.length - 4) : 0~length-4까지의 문자열 반환
+        document.write(phoneNum.substring(0, phoneNum.length - 4) + "****", "<br>");
+    </script>
+</body>
+</html>

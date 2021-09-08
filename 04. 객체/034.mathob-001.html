@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge ">
+    <meta name="viewport " content="width=divice-width,initial-scale=a.0">
+    <title>수학 객체</title>
+</head>
+    <body>
+        <script>
+              var num=2.1234;
+              var maxNum=Math.max(10,25,8,30);
+              var minNum=Math.min(10,5,8,30);
+              //소수점 첫 째 자리에서 반올림
+              var roundNum=Math.round(num);
+              //소수점 첫 째 자리에서 올림
+              var ceilNum=Math.ceil(num );
+              //소수점 첫 째 자리에서 버림
+              var floorNum=Math.floor(num);
+
+              var rndNum=Math.random();
+              //0~10 사이의 난수 반환
+              var rndNum1=Math.random()*10;
+              //0~10 사이의 난수 반환, 소수점 버림
+              var rndNum2=Math.floor(Math.random()*11);
+              //0~30 사이의 난수 봔환, 소수점 버림
+              var rndNum3=Math.floor(Math.random()*31);
+              //120~150 사이의 난수 반환
+              var rndNum4=Math.floor(Math.random()*31)+120;
+              var piNum=Math.PI;
+              //거듭제곱 값 반환
+              var powNum=Math.pow(10,3);
+              // 제곱근 값 반환
+              var sqrtNum=Math.sqrt(100);
+        
+              document.write("maxNum"+maxNum,"<br>");
+              document.write("minNum"+minNum,"<br>");
+              document.write("roundNum"+roundNum,"<br>");
+              document.write("ceilNum"+ceilNum,"<br>");
+              document.write("floorNum"+floorNum,"<br>");
+              document.write("rndNum"+rndNum,"<br>");
+              document.write("rndNum1"+rndNum1,"<br>");
+              document.write("rndNum2"+rndNum2,"<br>");
+              document.write("rndNum3"+rndNum3,"<br>");
+
+              document.write("rndNum4"+rndNum4,"<br>");
+              document.write("piNum"+piNum,"<br>");
+              document.write("powNum"+powNum,"<br>");
+              document.write("sqrtNum"+sqrtNum,"<br>");
+
+        </script>
+      
+
+
+</body>
+</html>

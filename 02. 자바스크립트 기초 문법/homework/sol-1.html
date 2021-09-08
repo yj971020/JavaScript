@@ -3,21 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
 	<title>웹 브라우저 창에 표시하기</title>
-	<style>
-		h1{
-			text-align: center;
-		}
-	</style>
 </head>
 <body>	
-	<h1>
 	<script>
-		var string;
-		string=prompt("내용 입력","");
-		document.write(string);
+		var contents = prompt("내용 입력 :");
+		var displaystr = "<h1 style='text-align: center;'>" + contents + "</h1>";
+		document.write(displaystr ); 
 	</script>
-</h1>
 </body>
 </html>
